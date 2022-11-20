@@ -30,7 +30,7 @@ similarity = pickle.load(bz2.BZ2File('similarity.pkl', 'rb'))
 st.title("Movie Recommender System")
 
 selected_movie_name = st.selectbox(
-    'How would you like to be contacted?',
+    'Choose Movie',
     movies['title'].values)
 if st.button('Recommend'):
     names, posters = recommend(selected_movie_name)
